@@ -68,7 +68,7 @@ const App: React.FC = () => {
             </p>
           </div>
           <div className="author-image">
-            <img src="/photo.webp" alt="Евгения Гальченко" />
+            <img src="/kwork_antiaging-lesson/photo.webp" alt="Евгения Гальченко" />
           </div> 
         </div>
       </section>
