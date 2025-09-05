@@ -1,0 +1,365 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2D2D2D; /* Тёмно-графитовый */
+}
+
+
+.page {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2D2D2D; /* Тёмно-графитовый */
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2D2D2D; /* Тёмно-графитовый */
+}
+
+.section {
+  padding: 24px 10px 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #2D2D2D;
+}
+
+/* Фото плейсхолдер */
+.photo-placeholder {
+  width: 300px;
+  height: 400px;
+  background-color: #2D2D2D; /* Тёмно-графитовый */
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-radius: 8px;
+}
+
+/* Кнопки */
+.btn-primary {
+  background-color: #4BBE91; /* Изумрудный */
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 1rem auto;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #3d9a7c; /* Темнее изумрудного */
+}
+
+/* Цены и тексты */
+.price-text {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: #2D2D2D;
+}
+
+.small-text {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-note {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.hero {
+  background-color: #FCE9E9; /* Пудровый розовый */
+}
+
+/* Секции */
+.section-white {
+  background-color: #FFFFFF; /* Белый */
+  margin-bottom: 0.75rem;
+}
+
+.section-text {
+  margin-top: 1.5rem
+}
+
+.section-light {
+  background-color: #E8E4F8; /* Лавандовый */
+  padding-bottom: 24px;
+}
+
+.section-pink {
+  background-color: #FCE9E9; /* Пудровый розовый */
+  padding-bottom: 12px;
+}
+
+.section-author {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #FFFFFF; /* Белый */
+}
+
+.author-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.author-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.author-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2D2D2D;
+}
+
+.author-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.author-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Видео-превью */
+.video-preview {
+  width: 800px;
+  height: 400px;
+  background-color: #2D2D2D; /* Тёмно-графитовый */
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+/* Бенефиты */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 20px;
+  justify-content: center; /* Выравнивание по центру */
+  align-content: center; /* Вертикальное выравнивание */
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.benefit-item {
+  background-color: #4BBE91; /* Изумрудный */
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  position: relative;
+  transition: transform 0.3s ease;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+}
+
+.checkmark {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Целевая аудитория */
+.target-list {
+  list-style: disc;
+  padding-left: 2rem;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+/* Текст подарка */
+.gift-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* === Мобильная адаптация (до 768px) === */
+@media (max-width: 768px) {
+  /* Общие шрифты */
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  /* Основной блок с фото */
+  .photo-placeholder {
+    width: 250px;
+    height: 350px;
+    font-size: 2rem;
+    margin: 1.5rem auto;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Кнопки */
+  .btn-primary {
+    width: 90%;
+    max-width: 320px;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+  }
+
+  .price-text,
+  .payment-note,
+  .small-text {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  /* Видео-превью */
+  .video-preview {
+    width: 100%;
+    max-width: 800px;
+    height: 280px;
+    font-size: 2rem;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+  }
+
+  /* Бенефиты — сетка на мобильных */
+  .benefits-grid {
+    grid-template-columns: 1fr; /* Один столбец */
+    gap: 1.5rem;
+    padding: 16px;
+  }
+
+  .benefit-item {
+    max-width: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .checkmark {
+    font-size: 1.1rem;
+  }
+
+  /* Автор — текст и фото в колонку */
+  .author-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .author-text,
+  .author-image {
+    flex: none;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .author-image {
+    margin: 0 auto;
+  }
+
+  .author-image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Список целевой аудитории */
+  .target-list {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    margin: 1.5rem 10px;
+  }
+
+  /* Текст подарка */
+  .gift-text {
+    font-size: 1.05rem;
+    padding: 0 16px;
+    line-height: 1.7;
+  }
+
+  /* Hero — отступы */
+  .hero {
+    padding: 20px 16px;
+  }
+
+  /* Убираем большие отступы */
+  body {
+    font-size: 16px;
+  }
+}
